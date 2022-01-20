@@ -1,2 +1,4 @@
-# dynamic-identity-model-for-agents
+# Dynamic Identity Model For Agents
 Agent-based model grounded on the Social Identity Approach.
+
+- Python folder WIP
