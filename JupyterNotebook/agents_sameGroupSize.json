@@ -1,0 +1,173 @@
+{
+	"agents": [
+		{
+			"name": "Ace",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.92
+				},
+				{
+					"name": "charisma",
+					"value": 0.10
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Ben",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.70
+				},
+				{
+					"name": "charisma",
+					"value": 0.12
+				}
+
+			],
+
+			"knowledgeBase": []
+
+
+		},
+		{
+			"name": "Cara",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.94
+				},
+				{
+					"name": "charisma",
+					"value": 0.15
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Dan",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.80
+				},
+				{
+					"name": "charisma",
+					"value": 0.05
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Edgar",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.96
+				},
+				{
+					"name": "charisma",
+					"value": 0.20
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Felix",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.15
+				},
+				{
+					"name": "charisma",
+					"value": 0.90
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Gabriel",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.11
+				},
+				{
+					"name": "charisma",
+					"value": 0.87
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Harry",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.22
+				},
+				{
+					"name": "charisma",
+					"value": 0.92
+				}
+
+			],
+
+			"knowledgeBase": []
+
+		},
+		{
+			"name": "Igor",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.15
+				},
+				{
+					"name": "charisma",
+					"value": 0.87
+				}
+
+			],
+
+			"knowledgeBase": []
+		},
+		{
+			"name": "Jane",
+			"characteristics": [
+				{
+					"name": "intelligence",
+					"value": 0.19
+				},
+				{
+					"name": "charisma",
+					"value": 0.93
+				}
+
+			],
+
+			"knowledgeBase": []
+		}
+	]
+}

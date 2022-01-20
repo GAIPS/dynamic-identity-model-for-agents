@@ -1,0 +1,16 @@
+{
+	"context":
+	{
+		"theme": [
+			{
+				"name" : "intelligence",
+				"weight" : 0.5
+			},
+			{
+				"name" : "charisma",
+				"weight" : 0.5
+			}
+		],
+		"agentsPresent" : ["Ace", "Ben", "Cara", "Dan", "Edgar", "Felix", "Gabriel", "Harry", "Igor", "Jane"]
+	}
+}
