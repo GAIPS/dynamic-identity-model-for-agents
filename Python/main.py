@@ -4,7 +4,6 @@ import sys
 import os
 import fileManager
 import simulation
-import dictatorGame
 
 class App(QWidget):
     def __init__(self):
@@ -17,8 +16,6 @@ class App(QWidget):
         self.loadedOutput = False
         #File Manager - includes all the information obtained from the simulation input files
         self.fileManager = None
-        #Initialize Dictator Game
-        self.dictator = dictatorGame.DictatorGame(20, 100, -0.1, 0.1)
         #Initialize User Interface
         self.initUI()
         
@@ -119,11 +116,11 @@ class App(QWidget):
         if self.textOutputFolder.text():
             self.loadedOutput = True
         self.fileManager = fileManager.FileManager(self.textAgentsFile.text(), self.textContextFile.text())
-        self.computeSalience()
+        self.identitySalienceMechanism()
         
-    def computeSalience(self):
+    def identitySalienceMechanism(self):
         if self.fileManager.loadedInput is True and self.loadedOutput is True:
-            simulation.Simulation(self.numSteps, self.numRuns, self.fileManager.agents, self.fileManager.socialCtxObj, self.fileManager.thresholdDist, self.fileManager.thresholdNormative, self.fileManager.comparativeFitAlpha, self.fileManager.comparativeFitBeta, self.fileManager.minimalSalienceThreshold, self.textOutputFolder.text(), self.dictator)    
+            simulation.Simulation(self.numSteps, self.numRuns, self.fileManager.agents, self.fileManager.socialCtxObj, self.textOutputFolder.text())    
             self.listOutputFiles()
                            
 #Start Application

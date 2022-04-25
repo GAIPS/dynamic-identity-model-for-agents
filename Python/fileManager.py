@@ -30,29 +30,20 @@ class FileManager:
         #agents not initialized yet
         data = self.readJSONFile(self.fileAgents)
         if data is not None:
-            for d in data['agents']:
-                nameA = d['name']
+            for a in data['agents']:
+                nameA = a['name']
                 charA = {}
                 kbA = []
-                for c in d['characteristics']:
+                for c in a['characteristics']:
                     charA[c['name']] = c['value']
-                for kb in d['knowledgeBase']:
-                    nameSG = kb['name']
+                for sg in a['normativeGroups']:
+                    nameSG = sg['name']
                     charSG = {}
-                    emotionalValence = kb['emotionalValence']
-                    for ckb in kb['characteristics']:
-                        charSG[ckb['name']] = ckb['value']
-                    kbA.append(socialGroup.SocialGroup(nameSG, charSG, emotionalValence))
+                    accessibility = sg['accessibility']
+                    for c in sg['characteristics']:
+                        charSG[c['name']] = c['value']
+                    kbA.append(socialGroup.SocialGroup(nameSG, charSG, accessibility))
                 self.agents.append(agent.Agent(nameA, charA, kbA))
-
-            #Clustering
-            self.thresholdDist = data['thresholdDist']
-            #Normative Fit
-            self.thresholdNormative = data['thresholdNormative']
-            #Comparative fit
-            self.comparativeFitAlpha = data['comparativeFitAlpha']
-            self.comparativeFitBeta = data['comparativeFitBeta']
-            self.minimalSalienceThreshold = data['minimalSalienceThreshold']
             return True
         return False
     

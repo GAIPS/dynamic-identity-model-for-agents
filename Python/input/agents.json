@@ -91,11 +91,11 @@
 			"characteristics": [
 				{
 					"name": "intelligence",
-					"value": 0.91
+					"value": 0.15
 				},
 				{
 					"name": "charisma",
-					"value": 0.19
+					"value": 0.90
 				}
 
 			],
@@ -170,4 +170,5 @@
 			"normativeGroups": []
 		}
 	]
+
 }
